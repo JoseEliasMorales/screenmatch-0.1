@@ -5,7 +5,7 @@ import com.theokanning.openai.service.OpenAiService;
 
 public class ConsultaChatGPT {
     public static String obtenerTraduccion(String texto){
-        OpenAiService service = new OpenAiService("");
+        //OpenAiService service = new OpenAiService("");
 
         CompletionRequest requisicion = CompletionRequest.builder()
                 .model("gpt-3.5-turbo-instruct")
@@ -14,7 +14,9 @@ public class ConsultaChatGPT {
                 .temperature(0.7)
                 .build();
 
-        var respuesta = service.createCompletion(requisicion);
-        return respuesta.getChoices().get(0).getText();
+        //var respuesta = service.createCompletion(requisicion);
+        //return respuesta.getChoices().get(0).getText();
+
+        return null;
     }
 }
